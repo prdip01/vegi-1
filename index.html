@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vegetable List</h1>
+        <div class="input-group">
+            <label for="vegetable">Choose a vegetable:</label>
+            <select id="vegetable">
+                <option value="Tamatar">Tamatar</option>
+                <option value="Alu">Alu</option>
+                <option value="Gajar">Gajar</option>
+                <option value="Patal">Patal</option>
+                <option value="loki">loki</option>
+                <option value="khera">khera</option>
+                <option value="bhindi">bhindi</option>
+                <option value="Piyaj">Piyaj</option>
+                <option value="lesun">Lesun</option>
+                <option value="Mirchi">Mirchi</option>
+                <option value="adark">Adark</option>
+                <option value="Meat">Meat</option>
+                <option value="Chiken">Chiken</option>
+                <option value="Began">Began</option>
+                <option value="gobi">Gobi</option>
+                <option value="Loki">Loki</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="weight">Choose a weight:</label>
+            <select id="weight">
+                <option value="250g">250g</option>
+                <option value="500g">500g</option>
+                <option value="1kg">1kg</option>
+                <option value="2kg">2kg</option>
+            </select>
+        </div>
+        <button onclick="addVegetable()">Add Vegetable</button>
+        <button onclick="resetList()" class="reset-button">Reset Bill</button>
+        <ul id="vegetable-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
